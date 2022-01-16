@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap');
+
+body {
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+h1 {
+    padding: 2vw;
+    text-align: center;
+    border-bottom: solid 2px black;
+    border-radius: 2vw;
+}
+
+ul {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    width: 80%;
+    height: 20vw;
+    border: solid 1px black;
+    border-radius: 2vw;
+    margin-bottom: 1vw;
+}
+
+li .left {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+li .left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+}
+
+li .right {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+li .right .field {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+li .right .field p {
+    font-weight: bold;
+    font-size: 1.1vw;
+}
+
+li .right .ans {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+li .right .ans p {
+    font-size: 1.1vw;
+}
+
+@media screen and (max-width: 550px) {
+
+    ul li {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vw;
+        margin-bottom: 5%;
+    }
+
+    ul li .left {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li .left img {
+        width: 70%;
+        height: 100%;
+    }
+
+    ul li .right {
+        width: 80%;
+        height: 50%;
+    }
+
+    ul li .right .field {
+        width: 40%;
+    }
+
+    ul li .right .ans {
+        width: 60%;
+    }
+
+    li .right .field p {
+        font-size: 3vw;
+    }
+
+    li .right .ans p {
+        font-size: 2.9vw;
+    }
+
+
+}
